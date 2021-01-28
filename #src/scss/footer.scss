@@ -1,0 +1,40 @@
+.footer {
+    margin: auto 0 0 0;
+    &__wrap {
+        width: 100%;
+        background: #3A405A;
+    }
+    &__row {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__column {
+    }
+
+    &__contacts {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__copyright {
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__social-link {
+        width: 16px;
+        height: 16px;
+        margin: 0 0 0 20px;
+    }
+
+
+}
+

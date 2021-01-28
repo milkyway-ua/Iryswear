@@ -1,0 +1,142 @@
+//Шрифти
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+//@import "null_style.scss";
+@import "../../node_modules/swiper/swiper.scss";
+@import "header.scss";
+@import "first-page.scss";
+@import "shipping.scss";
+@import "about.scss";
+@import "contacts.scss";
+@import "footer.scss";
+
+
+//обнулення style start
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+:focus,:active {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+input,button,textarea {
+    background-color: inherit;
+}
+
+button, a {
+    cursor: pointer;
+    color: inherit;
+}
+
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+
+ul li{
+    list-style: none;
+}
+
+//обнулення end
+
+//шаблони
+%tplborder {
+    border: 1px solid rgba(98,111,119,0.4);
+    border-radius: 2px;
+}
+
+%tpplacehold {
+    font-size: 12px;
+    color: rgba(98,111,119,0.4);
+}
+
+//Змінні
+$fontfamily: 'Lato', sans-serif;
+
+
+//Основні стилі start
+
+html, body  {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: $fontfamily;
+    color: #3A405A;
+    min-width: 320px;
+    width: 100%;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 98px 0 0 0;    
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+input,textarea {
+    @extend %tplborder;
+}
+.ibg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    img {
+        display: none;
+    }
+}
+
+.service-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+}
+//Основні стилі end
