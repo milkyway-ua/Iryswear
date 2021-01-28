@@ -225,12 +225,12 @@
     margin: 0 10px 0 0;
     @media (max-width: 992px) {
         position: fixed;
-        width: 100%;
+        width: 50%;
         height: 100%;
         background-color: #fff;
         padding: 40px;
         overflow: auto;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         transition: 0.5s all;
         color: #000;
         z-index: 5;
@@ -239,7 +239,7 @@
         margin: 0;
     }
     &.active {
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
     &__list {
         display: flex;
