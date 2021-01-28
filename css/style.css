@@ -353,9 +353,9 @@
 }
 
 .nav-menu.active {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .nav-menu__list {
@@ -1326,14 +1326,14 @@ h4 {
 
   .nav-menu {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: #fff;
     padding: 40px;
     overflow: auto;
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     transition: 0.5s all;
