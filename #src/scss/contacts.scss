@@ -33,11 +33,6 @@
                     padding: 0;
                     order: 3;
                 }
-                @media (max-width: 575px) {
-                    &:nth-child(3) {
-                        margin: 0 0 0 15px;
-                    }
-                }
             }
         }
         
