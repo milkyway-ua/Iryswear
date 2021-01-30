@@ -1351,7 +1351,7 @@ h4 {
     position: fixed;
     width: 50%;
     height: 100%;
-    ba7ckground-color: #fff;
+    background-color: #fff;
     padding: 40px;
     overflow: auto;
     -webkit-transform: translateX(100%);
@@ -1448,12 +1448,6 @@ h4 {
 
   .contacts__map {
     height: 200px;
-  }
-}
-
-@media (max-width: 920px) and (max-width: 575px) {
-  .contacts__info .basic-info__text:nth-child(3) {
-    margin: 0 0 0 15px;
   }
 }
 
